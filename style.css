@@ -1,0 +1,345 @@
+/* Change these values to try a different colour palette. */
+:root {
+  --cream: #fffaf4;
+  --cream-deep: #f8eee4;
+  --pink: #f9e1e7;
+  --pink-deep: #85384e;
+  --ink: #392d31;
+  --muted-ink: #65575c;
+  --white: #ffffff;
+  --focus: #743044;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--pink-deep);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--focus);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+.site-header {
+  background: var(--cream);
+  border-bottom: 1px solid var(--cream-deep);
+}
+
+.navigation {
+  width: min(100% - 2rem, 1100px);
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-name {
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main {
+  width: min(100% - 2rem, 1000px);
+  margin: 0 auto;
+}
+
+.welcome {
+  min-height: 390px;
+  margin-top: 2rem;
+  padding: 3.5rem clamp(1.5rem, 6vw, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--pink);
+}
+
+.welcome-content {
+  max-width: 620px;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--pink-deep);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  line-height: 1.15;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.welcome-intro {
+  max-width: 590px;
+  margin-bottom: 1.5rem;
+  color: #49383e;
+  font-size: 1.15rem;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border: 2px solid var(--pink-deep);
+  border-radius: 999px;
+  background: var(--pink-deep);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background: var(--focus);
+  color: var(--white);
+}
+
+.welcome-note {
+  width: 150px;
+  min-width: 150px;
+  height: 150px;
+  display: grid;
+  place-content: center;
+  gap: 0.15rem;
+  transform: rotate(7deg);
+  border: 2px dashed var(--pink-deep);
+  border-radius: 50%;
+  color: var(--pink-deep);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.picture-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+}
+
+.picture-card {
+  min-height: 155px;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  border: 1px solid #f0e1d7;
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--pink-deep);
+  text-align: center;
+}
+
+.picture-card svg {
+  width: 78px;
+  height: 78px;
+}
+
+.picture-card figcaption {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.heart-card {
+  transform: translateY(0.65rem);
+}
+
+.cloud-card {
+  transform: translateY(-0.35rem);
+}
+
+.content-section {
+  padding: 2.5rem 0;
+  scroll-margin-top: 1rem;
+}
+
+.about-section {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.about-section > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted-ink);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.75rem;
+  border: 1px solid #f0e1d7;
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.detail-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding-left: 1.4rem;
+  color: var(--muted-ink);
+}
+
+.detail-list li::marker {
+  color: var(--pink-deep);
+}
+
+.contact-section {
+  margin: 1rem 0 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--cream-deep);
+  text-align: center;
+}
+
+.contact-section p:not(.eyebrow) {
+  margin-bottom: 0.5rem;
+}
+
+.email-link {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 1.25rem 1rem;
+  background: var(--pink);
+  color: var(--ink);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Adjust this spacing if you want sections to feel more compact or more open. */
+@media (max-width: 650px) {
+  .navigation {
+    padding: 1rem 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 0.4rem 1rem;
+  }
+
+  .welcome {
+    min-height: 0;
+    margin-top: 1rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .welcome-note {
+    display: none;
+  }
+
+  .picture-row {
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .picture-card {
+    min-height: 125px;
+    padding: 0.6rem 0.25rem;
+  }
+
+  .picture-card svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .picture-card figcaption {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .heart-card,
+  .cloud-card {
+    transform: none;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .contact-section {
+    padding: 1.75rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

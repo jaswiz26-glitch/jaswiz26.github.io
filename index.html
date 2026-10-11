@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A little introduction to Jasmine Shek, a Psychology student.">
+  <title>Jasmine Shek | Psychology Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="site-name" href="#home">Jasmine Shek</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Change the words inside these sections to update the page text. -->
+    <section class="welcome" id="home" aria-labelledby="welcome-heading">
+      <div class="welcome-content">
+        <p class="eyebrow">Hello and welcome!</p>
+        <h1 id="welcome-heading">I'm Jasmine Shek</h1>
+        <p class="welcome-intro">A Psychology student who cares about helping children learn, grow, and feel supported.</p>
+        <a class="button-link" href="#about">Get to know me</a>
+      </div>
+      <div class="welcome-note" aria-hidden="true">
+        <span>Learn</span>
+        <span>Grow</span>
+        <span>Care</span>
+      </div>
+    </section>
+
+    <!-- These simple original illustrations are placeholders; replace them with your own approved pictures if you like. -->
+    <section class="picture-row" aria-label="Decorative illustrations">
+      <figure class="picture-card flower-card">
+        <svg viewBox="0 0 100 100" role="img" aria-label="A simple pink flower">
+          <g fill="#f2a9bc">
+            <ellipse cx="50" cy="27" rx="11" ry="19"/>
+            <ellipse cx="50" cy="73" rx="11" ry="19"/>
+            <ellipse cx="27" cy="50" rx="19" ry="11"/>
+            <ellipse cx="73" cy="50" rx="19" ry="11"/>
+            <ellipse cx="34" cy="34" rx="11" ry="18" transform="rotate(-45 34 34)"/>
+            <ellipse cx="66" cy="66" rx="11" ry="18" transform="rotate(-45 66 66)"/>
+            <ellipse cx="66" cy="34" rx="11" ry="18" transform="rotate(45 66 34)"/>
+            <ellipse cx="34" cy="66" rx="11" ry="18" transform="rotate(45 34 66)"/>
+          </g>
+          <circle cx="50" cy="50" r="13" fill="#ffe4a8"/>
+        </svg>
+        <figcaption>Bloom with kindness</figcaption>
+      </figure>
+      <figure class="picture-card heart-card">
+        <svg viewBox="0 0 100 100" role="img" aria-label="A pink heart with little sparkles">
+          <path d="M50 82 17 51C-1 29 28 9 50 32 72 9 101 29 83 51Z" fill="#e998ad"/>
+          <path d="M17 20v10M12 25h10M82 67v9M78 71h8" stroke="#bd7187" stroke-linecap="round" stroke-width="4"/>
+        </svg>
+        <figcaption>A little kindness</figcaption>
+      </figure>
+      <figure class="picture-card cloud-card">
+        <svg viewBox="0 0 100 100" role="img" aria-label="A cute smiling sun">
+          <g stroke="#e5a74e" stroke-linecap="round" stroke-width="5">
+            <path d="M50 8v10M50 82v10M8 50h10M82 50h10M20 20l7 7M73 73l7 7M80 20l-7 7M27 73l-7 7"/>
+          </g>
+          <circle cx="50" cy="50" r="29" fill="#ffd779" stroke="#e5a74e" stroke-width="3"/>
+          <circle cx="40" cy="47" r="2.5" fill="#694b55"/>
+          <circle cx="60" cy="47" r="2.5" fill="#694b55"/>
+          <path d="M42 57q8 9 16 0" fill="none" stroke="#9c465d" stroke-linecap="round" stroke-width="2.5"/>
+          <circle cx="34" cy="56" r="3" fill="#f2a9bc"/>
+          <circle cx="66" cy="56" r="3" fill="#f2a9bc"/>
+        </svg>
+        <figcaption>Soft and sunny days</figcaption>
+      </figure>
+    </section>
+
+    <section class="content-section about-section" id="about" aria-labelledby="about-heading">
+      <p class="eyebrow">A little about me</p>
+      <h2 id="about-heading">About Me</h2>
+      <p>I am a cheerful and patient Psychology student with a strong interest in supporting children’s development and wellbeing. I enjoy creating a positive, encouraging environment where children feel safe to learn and grow. I am currently gaining hands-on experience through an internship programme at an autism school, where I am learning about Applied Behaviour Analysis (ABA) therapy and how to support children with autism in meaningful, respectful ways.</p>
+    </section>
+
+    <div class="card-grid">
+      <section class="content-section card" id="skills" aria-labelledby="skills-heading">
+        <p class="eyebrow">Things I bring</p>
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="detail-list">
+          <li>Willingness to learn</li>
+          <li>Advanced MS skills</li>
+          <li>Grade 8 ABRSM piano</li>
+        </ul>
+      </section>
+
+      <section class="content-section card" id="subjects" aria-labelledby="subjects-heading">
+        <p class="eyebrow">What I enjoy studying</p>
+        <h2 id="subjects-heading">Favourite Subjects</h2>
+        <ul class="detail-list">
+          <li>Educational Psychology</li>
+          <li>Clinical Psychology</li>
+          <li>Child &amp; Adolescent Psychology</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="content-section contact-section" id="contact" aria-labelledby="contact-heading">
+      <p class="eyebrow">Say hello</p>
+      <h2 id="contact-heading">Contact</h2>
+      <p>I’d be happy to hear from you.</p>
+      <a class="email-link" href="mailto:s236257@hsu.edu.hk">Email Jasmine at s236257@hsu.edu.hk</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care by Jasmine Shek</p>
+  </footer>
+</body>
+</html>
